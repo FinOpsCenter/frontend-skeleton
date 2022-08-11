@@ -1,0 +1,12 @@
+{
+  "app.header": "Cloud Financials",
+  "menu.title": "Cloud Financials",
+  "submenu.chartOfAccount": "Cloud Platform to Chart of account",
+  "submenu.chartOfAccountNew": "Refactored",
+  "submenu.userEnrollment": "User Enrollment",
+  "submenu.userManagement": "User Management",
+  "sor.element1Name": "Business Unit",
+  "sor.element2Name": "Department",
+  "sor.element3Name": "Portfolio Name",
+  "sor.element4Name": "Product Name"
+}

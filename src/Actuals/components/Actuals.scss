@@ -1,0 +1,64 @@
+@import '../../scss/variables';
+
+.actuals {
+  font-size: 12px;
+  .totals-row {
+    .actuals-badge {
+      padding: 0px !important;
+      display: flex;
+      justify-content: center;
+
+      &.active {
+        background-color: bisque;
+      }
+    }
+  }
+
+  .totals-header {
+    margin-bottom: $spacing-large;
+  }
+
+  .actuals-data {
+    padding: $spacing-regular;
+    background-color: $background-blue;
+    margin-bottom: $spacing-large;
+
+    .dropdown {
+      margin: $spacing-regular $spacing-regular $spacing-large;
+    }
+
+    .rt-table {
+      .rt-thead {
+        &.-header {
+          font-size: $font-size-medium;
+          font-weight: $font-weight-bold;
+
+          .rt-th {
+            text-align: left;
+
+            &.rthfc-th-fixed {
+              font-size: $font-size-large;
+            }
+          }
+        }
+      }
+
+      .rt-tbody {
+        .rt-td {
+          padding: 0px;
+          .row-data {
+            padding: $spacing-regular;
+
+            &.fixed-col {
+              font-size: $font-size-medium;
+            }
+          }
+          .current-month {
+            height: 100%;
+            background-color: #f8efe5;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import 'scss/variables';
+@import 'scss/overrides';
+
+@import '~slick-carousel/slick/slick';
+@import '~slick-carousel/slick/slick-theme';
+
+body {
+  font-family: poppins;
+}
+
+.App {
+  font-weight: $font-weight-normal;
+  background-color: $background-blue;
+  padding-bottom: 2.5rem; /* Footer height */
+}

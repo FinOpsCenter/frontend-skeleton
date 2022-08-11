@@ -1,0 +1,27 @@
+// Override default variables before the import
+//$body-bg: #000;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+@import 'variables';
+
+.phn {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.prr {
+  padding-right: $spacing-regular;
+}
+
+.pls {
+  padding-left: $spacing-small;
+}
+
+.prs {
+  padding-right: $spacing-small;
+}
+
+.inline-block {
+  display: inline-block;
+}

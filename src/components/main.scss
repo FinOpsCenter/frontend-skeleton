@@ -1,0 +1,14 @@
+@import '../scss/variables';
+
+.main {
+  .tab-content {
+    background-color: $background-white;
+    padding-top: $spacing-xl;
+  }
+
+  .page-title {
+    color: $green;
+    font-weight: $font-weight-bolder;
+    font-size: $font-size-lg;
+  }
+}
