@@ -1,7 +1,7 @@
 const Routes = {
-  ACTUALS: {
+  BUDGET: {
     PATH: '/',
-    TITLE: 'Reporting'
+    TITLE: 'Budgets'
   }
 }
 
