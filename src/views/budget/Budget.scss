@@ -4,8 +4,32 @@
   padding-top: 30px;
 }
 
+.card {
+  border: 1px solid #d0daea;
+  border-radius: 10px;
+  h2 {
+    font-size: $font-size-xxxlarge;
+    font-weight: $font-weight-bolder;
+  }
+
+  h3 {
+    font-size: $font-size-xxlarge;
+    font-weight: $font-weight-bolder;
+  }
+
+  h3:last-child {
+    margin: 0;
+  }
+}
+
 .card-semi-circular-progressbar {
-  height: 100%;
+  min-height: 300px;
+
+  .card-color {
+    width: 260px;
+    flex-shrink: 0;
+    padding: 20px;
+  }
 }
 
 .card-with-shadow {
@@ -24,18 +48,6 @@
   margin-bottom: 8px;
 }
 
-.card {
-  h2 {
-    font-size: $font-size-xxxlarge;
-    font-weight: $font-weight-bolder;
-  }
-
-  h3 {
-    font-size: $font-size-xxlarge;
-    font-weight: $font-weight-bolder;
-  }
-}
-
 .card-progressbar {
   width: 100%;
   text-align: center;
@@ -49,9 +61,7 @@
   color: #fff;
   border: none;
   border-radius: 10px;
-  padding: 20px;
-  width: 260px;
-  flex-shrink: 0;
+  padding: 5px;
 }
 
 .card-green {
@@ -60,4 +70,28 @@
 
 .card-orange {
   background-color: #f2b01a;
+}
+
+.card-red {
+  background-color: #e0252e;
+}
+
+.business-units-section {
+  background-color: $blue-10;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.budget-subtitle {
+  color: $primary-color;
+  font-size: $font-size-xxxlarge;
+}
+
+.btn-app {
+  background-color: $blue-100;
+  color: #fff;
+  font-size: $font-size-large;
+  border-radius: 20px !important;
+  padding: 6px 30px;
 }

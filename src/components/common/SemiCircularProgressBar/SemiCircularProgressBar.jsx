@@ -2,10 +2,11 @@ import React from 'react'
 
 import './SemiCircularProgressbar.scss'
 
-const SemiCircularProgressbar = ({ percent = 50, radio = 50 }) => {
+const SemiCircularProgressbar = ({ percent = 50, radio = 50, circledContent = false }) => {
+  console.log({ circledContent })
   return (
     <div
-      className="semi-circular-progressbar-wrapper"
+      className={`semi-circular-progressbar-wrapper ${circledContent ? 'circled' : ''}`}
       style={{
         '--percent': percent,
         '--radio': radio,
@@ -28,7 +29,7 @@ const SemiCircularProgressbar = ({ percent = 50, radio = 50 }) => {
           <circle className="empty" cx={radio} cy={radio} r={radio * 0.9} />
           <circle className="progressbar" cx={radio} cy={radio} r={radio * 0.9} />
         </svg>
-        <div className="content">{percent}%</div>
+        <div className={circledContent ? 'circled-content' : 'content'}>{percent}%</div>
       </div>
     </div>
   )
