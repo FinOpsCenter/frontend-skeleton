@@ -3,7 +3,8 @@ import getActualsForUser from '../use-cases/get-actuals-for-user'
 import AppContext from '../../context/AppContext'
 import LoadingSpinner from '../../components/common/LoadingSpinner'
 import './Actuals.scss'
-import TotalsGrid from './TotalsGrid'
+import SemiCircularProgressBar from 'components/common/SemiCircularProgressBar/SemiCircularProgressBar'
+// import TotalsGrid from './TotalsGrid'
 
 const Actuals = () => {
   const { repoFactory, selectedYear } = React.useContext(AppContext)
@@ -37,8 +38,15 @@ const Actuals = () => {
     <div className="actuals">
       <h1 className="page-title">{`Company Product Manager`}</h1>
       {isLoading && <LoadingSpinner />}
+      <div className="card p-5">
+        <SemiCircularProgressBar percent={10} />
+        <SemiCircularProgressBar percent={25} />
+        <SemiCircularProgressBar percent={50} />
+        <SemiCircularProgressBar percent={75} />
+        <SemiCircularProgressBar percent={100} />
+      </div>
 
-      <div className="actuals-data">{actualsData && <TotalsGrid actualsData={actualsData} year={selectedYear} />}</div>
+      {/* <div className="actuals-data">{actualsData && <TotalsGrid actualsData={actualsData} year={selectedYear} />}</div> */}
     </div>
   )
 }
