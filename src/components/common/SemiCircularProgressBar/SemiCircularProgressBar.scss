@@ -1,4 +1,10 @@
-.semi-circular-progress-bar {
+.semi-circular-progressbar-wrapper {
+  height: 110px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.semi-circular-progressbar {
   height: 200px;
   width: 200px;
   position: relative;
@@ -18,16 +24,16 @@
     stroke-linecap: round;
   }
 
-  circle.progress-bar {
+  circle.progressbar {
     stroke: url('#gradient-color');
-    stroke-dashoffset: calc(565.2 - (565.2 * var(--num)) / 200);
+    stroke-dashoffset: calc(565.2 - (565.2 * var(--percent)) / 200);
   }
 
   .dot {
     position: absolute;
     inset: 0;
     z-index: 10;
-    transform: rotate(calc(1.8deg * var(--num)));
+    transform: rotate(calc(1.8deg * var(--percent)));
   }
 
   .dot::before {
@@ -46,16 +52,9 @@
 
   .content {
     position: absolute;
-    top: 35px;
-    left: calc(50% - 65px);
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.22);
-    width: 130px;
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 30px;
     font-weight: bold;
   }
