@@ -1,12 +1,11 @@
 .semi-circular-progressbar-wrapper {
-  height: 110px;
-  width: 200px;
-  overflow: hidden;
+  height: calc(var(--radio) * 1px);
+  width: calc(var(--radio) * 2px);
 }
 
 .semi-circular-progressbar {
-  height: 200px;
-  width: 200px;
+  height: calc(var(--radio) * 2px);
+  width: calc(var(--radio) * 2px);
   position: relative;
 
   svg {
@@ -18,15 +17,15 @@
   circle {
     fill: none;
     stroke: #eef2f7;
-    stroke-width: 20px;
-    stroke-dasharray: 565.2;
-    stroke-dashoffset: 282.6;
+    stroke-width: calc(var(--stroke) * 1px);
+    stroke-dasharray: var(--perimeter);
+    stroke-dashoffset: calc(var(--perimeter) / 2);
     stroke-linecap: round;
   }
 
   circle.progressbar {
     stroke: url('#gradient-color');
-    stroke-dashoffset: calc(565.2 - (565.2 * var(--percent)) / 200);
+    stroke-dashoffset: calc(var(--perimeter) - (var(--perimeter) * var(--percent)) / 200);
   }
 
   .dot {
@@ -38,14 +37,16 @@
 
   .dot::before {
     content: '';
-    width: 20px;
-    height: 20px;
+    width: calc(var(--stroke) * 1px);
+    height: calc(var(--stroke) * 1px);
     position: absolute;
-    top: calc(50% - 14px);
-    left: -4px;
+    top: 50%;
+    left: calc(var(--stroke) * -0.2px);
+    transform: translateY(-50%);
     border-radius: 50%;
     background: transparent;
-    border: 4px solid #fff;
+    border: 1px solid #fff;
+    border-width: calc(var(--stroke) * 0.2px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.22);
     box-sizing: content-box;
   }
@@ -55,7 +56,7 @@
     top: 30%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 30px;
+    font-size: calc(var(--radio) * 0.35px);
     font-weight: bold;
   }
 }
