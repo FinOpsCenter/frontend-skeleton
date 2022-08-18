@@ -1,14 +1,14 @@
 import Routes from '../routes'
-import Actuals from '../Actuals/components/Actuals'
+import Budget from 'views/budget/Budget'
 
 const private_routes = [
   {
-    component: Actuals,
-    path: Routes.ACTUALS.PATH,
-    title: Routes.ACTUALS.TITLE,
+    component: Budget,
+    path: Routes.BUDGET.PATH,
+    title: Routes.BUDGET.TITLE,
     exact: true,
-    activePaths: [Routes.ACTUALS.PATH],
-    permission: Routes.ACTUALS.PERMISSIONS
+    activePaths: [Routes.BUDGET.PATH],
+    permission: Routes.BUDGET.PERMISSIONS
   }
 ]
 
