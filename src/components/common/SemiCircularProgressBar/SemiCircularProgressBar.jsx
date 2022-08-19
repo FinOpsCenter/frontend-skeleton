@@ -3,7 +3,6 @@ import React from 'react'
 import './SemiCircularProgressbar.scss'
 
 const SemiCircularProgressbar = ({ percent = 50, radio = 50, circledContent = false }) => {
-  console.log({ circledContent })
   return (
     <div
       className={`semi-circular-progressbar-wrapper ${circledContent ? 'circled' : ''}`}
