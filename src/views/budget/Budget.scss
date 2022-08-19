@@ -1,0 +1,97 @@
+@import 'scss/variables.scss';
+
+.budget-view {
+  padding-top: 30px;
+}
+
+.card {
+  border: 1px solid #d0daea;
+  border-radius: 10px;
+  h2 {
+    font-size: $font-size-xxxlarge;
+    font-weight: $font-weight-bolder;
+  }
+
+  h3 {
+    font-size: $font-size-xxlarge;
+    font-weight: $font-weight-bolder;
+  }
+
+  h3:last-child {
+    margin: 0;
+  }
+}
+
+.card-semi-circular-progressbar {
+  min-height: 300px;
+
+  .card-color {
+    width: 260px;
+    flex-shrink: 0;
+    padding: 20px;
+  }
+}
+
+.card-with-shadow {
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-title {
+  font-weight: $font-weight-bolder;
+}
+
+.card-subtitle {
+  font-size: $font-size-large;
+  font-weight: $font-weight-light;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.card-progressbar {
+  width: 100%;
+  text-align: center;
+
+  .semi-circular-progressbar-wrapper {
+    margin: 0 auto;
+  }
+}
+
+.card-color {
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.card-green {
+  background-color: #83bb35;
+}
+
+.card-orange {
+  background-color: #f2b01a;
+}
+
+.card-red {
+  background-color: #e0252e;
+}
+
+.business-units-section {
+  background-color: $blue-10;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.budget-subtitle {
+  color: $primary-color;
+  font-size: $font-size-xxxlarge;
+}
+
+.btn-app {
+  background-color: $blue-100;
+  color: #fff;
+  font-size: $font-size-large;
+  border-radius: 20px !important;
+  padding: 6px 30px;
+}
