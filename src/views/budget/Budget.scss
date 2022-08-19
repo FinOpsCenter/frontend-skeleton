@@ -20,6 +20,16 @@
   h3:last-child {
     margin: 0;
   }
+
+  h4 {
+    font-size: $font-size-xlarge;
+    font-weight: $font-weight-bolder;
+  }
+
+  h5 {
+    font-size: $font-size-large;
+    font-weight: $font-weight-bolder;
+  }
 }
 
 .card-semi-circular-progressbar {
@@ -43,9 +53,9 @@
 
 .card-subtitle {
   font-size: $font-size-large;
-  font-weight: $font-weight-light;
+  font-weight: 300;
   letter-spacing: -0.02em;
-  margin-bottom: 8px;
+  color: #6b788c;
 }
 
 .card-progressbar {
@@ -62,18 +72,33 @@
   border: none;
   border-radius: 10px;
   padding: 5px;
+  .card-subtitle {
+    color: #fff;
+  }
 }
 
 .card-green {
   background-color: #83bb35;
 }
 
+.card-outline-green {
+  border: 2px solid #83bb35;
+}
+
 .card-orange {
   background-color: #f2b01a;
 }
 
+.card-outline-orange {
+  border: 2px solid #f2b01a;
+}
+
 .card-red {
   background-color: #e0252e;
+}
+
+.card-outline-red {
+  border: 2px solid #e0252e;
 }
 
 .section-gray {
@@ -94,4 +119,27 @@
   font-size: $font-size-large;
   border-radius: 20px !important;
   padding: 6px 30px;
+}
+
+.text-gray {
+  color: #6b788c;
+}
+
+.unit-deparments {
+  .unit-deparments-header {
+    font-size: $font-size-large;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  .card {
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
 }

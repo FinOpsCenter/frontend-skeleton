@@ -7,7 +7,7 @@ import BusinessUnits from './components/BusinessUnits'
 import SemiCircularProgressbar from 'components/common/SemiCircularProgressbar/SemiCircularProgressbar'
 
 import './Budget.scss'
-import CircularProgressbar from 'components/common/CircularProgressbar/CircularProgressbar'
+import UnitDeparments from './components/UnitDeparments'
 
 const Budget = () => {
   return (
@@ -64,21 +64,7 @@ const Budget = () => {
           </Row>
           <Row>
             <Col>
-              <Card className="section-gray">
-                <Card.Body>
-                  <h2 className="budget-subtitle">Unit 2 Departments</h2>
-
-                  <Row>
-                    <Col>
-                      <Card>
-                        <Card.Body>
-                          <CircularProgressbar radio="60" percent="10" />
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
+              <UnitDeparments />
             </Col>
           </Row>
         </Card.Body>
