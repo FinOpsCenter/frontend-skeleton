@@ -1,0 +1,56 @@
+[
+  {
+    "title": "unit 1",
+    "percent": 20,
+    "spending": "$10,000",
+    "year_date_spend": "$750,000",
+    "variance_in_spend": "$50,000",
+    "available_budget": "$200,000",
+    "planned_spend": "$10,000"
+  },
+  {
+    "title": "unit 2",
+    "percent": 60,
+    "spending": "$500,000",
+    "year_date_spend": "$750,000",
+    "variance_in_spend": "$50,000",
+    "available_budget": "$200,000",
+    "planned_spend": "$10,000"
+  },
+  {
+    "title": "unit 3",
+    "percent": 90,
+    "spending": "$750,000",
+    "year_date_spend": "$750,000",
+    "variance_in_spend": "$50,000",
+    "available_budget": "$200,000",
+    "planned_spend": "$10,000"
+  },
+  {
+    "title": "unit 1",
+    "percent": 20,
+    "spending": "$10,000",
+    "year_date_spend": "$750,000",
+    "variance_in_spend": "$50,000",
+    "available_budget": "$200,000",
+    "planned_spend": "$10,000"
+  },
+  {
+    "title": "unit 2",
+    "percent": 60,
+    "spending": "$500,000",
+    "year_date_spend": "$750,000",
+    "variance_in_spend": "$50,000",
+    "available_budget": "$200,000",
+    "planned_spend": "$10,000"
+  },
+  {
+    "title": "unit 3",
+    "percent": 90,
+    "spending": "$750,000",
+    "year_date_spend": "$750,000",
+    "variance_in_spend": "$50,000",
+    "available_budget": "$200,000",
+    "planned_spend": "$10,000"
+  }
+]

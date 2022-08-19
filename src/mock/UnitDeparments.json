@@ -1,0 +1,62 @@
+[
+  {
+    "department": "Lorem Ipsum Dolor",
+    "trend": 9392939120,
+    "percent": 30,
+    "spending": "$500,000",
+    "year_date_spend": "$750,000",
+    "variance_in_spend": "$50,000",
+    "available_budget": "$200,000",
+    "planned_spend": "$10,000"
+  },
+  {
+    "department": "Lorem Ipsum Dolor",
+    "trend": 9392939121,
+    "percent": 60,
+    "spending": "$500,000",
+    "year_date_spend": "$750,000",
+    "variance_in_spend": "$50,000",
+    "available_budget": "$200,000",
+    "planned_spend": "$10,000"
+  },
+  {
+    "department": "Lorem Ipsum Dolor",
+    "trend": 9392939123,
+    "percent": 90,
+    "spending": "$500,000",
+    "year_date_spend": "$750,000",
+    "variance_in_spend": "$50,000",
+    "available_budget": "$200,000",
+    "planned_spend": "$10,000"
+  },
+  {
+    "department": "Lorem Ipsum Dolor",
+    "trend": 9392939120,
+    "percent": 30,
+    "spending": "$500,000",
+    "year_date_spend": "$750,000",
+    "variance_in_spend": "$50,000",
+    "available_budget": "$200,000",
+    "planned_spend": "$10,000"
+  },
+  {
+    "department": "Lorem Ipsum Dolor",
+    "trend": 9392939121,
+    "percent": 60,
+    "spending": "$500,000",
+    "year_date_spend": "$750,000",
+    "variance_in_spend": "$50,000",
+    "available_budget": "$200,000",
+    "planned_spend": "$10,000"
+  },
+  {
+    "department": "Lorem Ipsum Dolor",
+    "trend": 9392939123,
+    "percent": 90,
+    "spending": "$500,000",
+    "year_date_spend": "$750,000",
+    "variance_in_spend": "$50,000",
+    "available_budget": "$200,000",
+    "planned_spend": "$10,000"
+  }
+]

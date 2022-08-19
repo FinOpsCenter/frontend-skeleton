@@ -2,6 +2,43 @@
 
 .budget-view {
   padding-top: 30px;
+
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 0;
+    height: 0;
+    top: 40%;
+    z-index: 1;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+
+  .slick-prev {
+    border-right: 25px solid #6283ba;
+    left: -12px;
+  }
+
+  .slick-prev.slick-disabled,
+  .slick-next.slick-disabled {
+    border: none;
+  }
+
+  .slick-next {
+    border-left: 25px solid #6283ba;
+    right: -12px;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    content: none;
+  }
 }
 
 .card {
